@@ -257,6 +257,377 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #0A0A1A;
+  color: var(--text-light);
+  padding-bottom: 80px;
+  direction: rtl;
+}
+
+/* Background Image Layer */
+.index-hero-section .hero-bg-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.index-hero-section .hero-bg-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7) contrast(1.1);
+}
+
+/* Scrim Overlay for Text Legibility */
+.index-hero-section .hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(10,10,26,0.55) 0%, rgba(10,10,26,0.35) 40%, rgba(10,10,26,0.65) 100%);
+  pointer-events: none;
+}
+
+/* Decorative Cyber Grid */
+.index-hero-section .cyber-grid-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(124,58,237,0.12) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(180deg, black 0%, transparent 80%);
+  -webkit-mask-image: linear-gradient(180deg, black 0%, transparent 80%);
+}
+
+/* Decorative Purple Glow */
+.index-hero-section .purple-radial-glow {
+  position: absolute;
+  top: 10%;
+  right: -10%;
+  width: 700px;
+  height: 700px;
+  z-index: 2;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(124,58,237,0.2) 0%, transparent 70%);
+  filter: blur(40px);
+}
+
+/* Warning Triangle Accent */
+.index-hero-section .warning-triangle-accent {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  width: 90px;
+  height: 90px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.5;
+  animation: floatWarning 6s ease-in-out infinite;
+}
+
+@keyframes floatWarning {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(3deg); }
+}
+
+/* Content Overlay Group */
+.index-hero-section .hero-overlay-group {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding: 140px 20px 60px;
+}
+
+.index-hero-section .hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.index-hero-section .hero-content {
+  max-width: 680px;
+  text-align: right;
+}
+
+/* Urgency Badge */
+.index-hero-section .urgency-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(249, 115, 22, 0.15);
+  border: 1px solid rgba(249, 115, 22, 0.4);
+  border-radius: 100px;
+  padding: 8px 20px;
+  margin-bottom: 24px;
+  color: #FBBF24;
+  font-size: 0.875rem;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.index-hero-section .badge-icon {
+  display: flex;
+  align-items: center;
+  color: #F97316;
+}
+
+/* Headline */
+.index-hero-section .hero-headline {font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--text-light);
+  margin-bottom: 24px;}
+
+/* Subtitle */
+.index-hero-section .hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #C4B5FD;
+  margin-bottom: 32px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  max-width: 600px;
+}
+
+/* Guarantee Block */
+.index-hero-section .guarantee-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 40px;
+  padding: 16px 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.index-hero-section .guarantee-icon {
+  color: #FBBF24;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.index-hero-section .guarantee-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin: 0;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+/* CTAs */
+.index-hero-section .hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.index-hero-section .btn-primary {
+  background: #F97316;
+  color: #ffffff;
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.index-hero-section .btn-primary:hover {
+  background: #FB923C;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(249, 115, 22, 0.5);
+}
+
+.index-hero-section .btn-secondary {
+  background: transparent;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: 2px solid rgba(255,255,255,0.25);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.index-hero-section .btn-secondary:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.5);
+  transform: translateY(-2px);
+}
+
+.index-hero-section .btn-arrow {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.index-hero-section .btn-secondary:hover .btn-arrow {
+  transform: rotate(180deg) translateX(-4px);
+}
+
+/* Trust Metrics */
+.index-hero-section .trust-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.index-hero-section .metric-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #94A3B8;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.index-hero-section .metric-item:hover {
+  color: #E2E8F0;
+}
+
+.index-hero-section .metric-icon {
+  color: #31E6B4;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Bottom Divider */
+.index-hero-section .index-hero-divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.index-hero-section .index-hero-divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .index-hero-section {
+    align-items: flex-start;
+    padding-bottom: 60px;
+  }
+
+  .index-hero-section .hero-overlay-group {
+    padding: 120px 16px 40px;
+  }
+
+  .index-hero-section .hero-content {
+    max-width: 100%;
+  }
+
+  .index-hero-section .hero-headline {
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+
+  .index-hero-section .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .index-hero-section .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .index-hero-section .btn-primary,
+  .index-hero-section .btn-secondary {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .index-hero-section .trust-metrics {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .index-hero-section .warning-triangle-accent {
+    top: 10%;
+    left: 5%;
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+  }
+
+  .index-hero-section .purple-radial-glow {
+    width: 400px;
+    height: 400px;
+    top: 20%;
+    right: -20%;
+  }
+
+  .index-hero-section .hero-scrim {
+    background: linear-gradient(180deg, rgba(10,10,26,0.65) 0%, rgba(10,10,26,0.45) 50%, rgba(10,10,26,0.75) 100%);
+  }
+
+  .index-hero-section .index-hero-divider-wrapper {
+    height: 60px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .index-hero-section .hero-headline {
+    font-size: 4rem;
+  }
+  
+  .index-hero-section .hero-content {
+    max-width: 750px;
+  }
+}
+/* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
+.hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 48px !important; line-height: 1.2 !important; }
+@media (max-width: 1024px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 36px !important; }
+}
+@media (max-width: 768px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 28px !important; }
+}
+
+/* ZAPPY_POSTGEN_GUARD_HERO_TYPO:בית-hero (index-hero) — stripped 1 jarring hero headline effect(s) */
+
+</style>
     <link rel="stylesheet" href="/styles.css">
     <script>window.ZAPPY_WEBSITE_ID = "f77a4b71-ee64-4468-a25c-9b3a55c2f84c"; window.ZAPPY_API_BASE = "https://api.zappy5.com";</script>
 
@@ -831,110 +1202,107 @@
 </script>
   
   <main id="main">
-    <section data-band-index="0" id="hero" class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" data-zappy-bg-overlay-color="#000000" data-zappy-bg-overlay-opacity="0">
-  <!-- Full-bleed background image -->
-  <div data-zappy-zoom-wrapper="true" data-element-id="img-1783344720183-rlypwcvka" data-element-type="image" data-zappy-zoom-wrapper-width-mode="full" style="position: absolute !important; top: 0px !important; left: 0px !important; width: 100% !important; height: 100% !important; max-width: none !important; margin-left: 0px !important; margin-right: 0px !important; z-index: 1 !important; overflow: hidden !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-zoom-wrapper-align="center"><img loading="eager" fetchpriority="high" data-hero-bg="true" class="hero-bg-image" data-placeholder="index-hero-image-1" data-context="Cinematic abstract cybersecurity background for IT consulting hero section: blurred server-room silhouettes, translucent infrastructure grid lines, glowing vulnerability nodes in coral and mint, deep midnight indigo atmosphere with subtle purple radial glow." width="1920" height="1080" src="/assets/site-index-hero-image-1.webp" alt="" aria-hidden="true" data-hero-background="true" data-element-type="image" data-element-id="img-1783344720183-rlypwcvka" style="object-position: 13% 54% !important; opacity: 1; mix-blend-mode: normal; pointer-events: auto !important; margin: 0px !important; position: absolute !important; left: -1.2747% !important; top: 0% !important; width: 109.805% !important; height: 100% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: fill !important;" data-zappy-zoom="0.8" data-zappy-hero-img-base-opacity="0.55" data-zappy-hero-img-base-blend="soft-light" data-zappy-object-position="13% 54%"></div>
-
-  <!-- Scrim overlay for text legibility -->
-  <div class="hero-scrim" aria-hidden="true" data-zappy-scrim-base-opacity="92" data-zappy-gradient-scrim="true" style="opacity: 0;"></div>
-
-  <!-- Content overlay group -->
-  <div class="hero-overlay-content">
-    
-    <!-- Urgency line -->
-    <div class="hero-urgency-tag">
-      <span class="urgency-dot"></span>
-      <span>נותרו 4 מקומות לשיחות אבחון החודש</span>
-    </div>
-
-    <!-- Main H1 headline -->
-    <h1 class="hero-headline">
-      תפסיק לישון עם דאגות.<br>קבל הגנת אנטרפרייז במחיר של עסק קטן.
-    </h1>
-
-    <!-- H3 subheading -->
-    <h3 class="hero-subtitle">
-      דמיטרי מורדוב מביא 20+ שנות ניסיון מניהול תשתיות קריטיות בארגונים פיננסיים, תעשייה ומדיה — ועכשיו הוא מנגיש את הסטנדרטים האלה לעסק שלך.
-    </h3>
-
-    <!-- Proof chips -->
-    <div class="hero-proof-chips">
-      <div class="proof-chip">
-        <svg class="chip-icon" data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 10.5L8.5 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"></circle>
-        </svg>
-        <span>סקר חוסן ראשוני תוך 10 ימים</span>
-      </div>
-      <div class="proof-chip">
-        <svg class="chip-icon" data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 10.5L8.5 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"></circle>
-        </svg>
-        <span>הפחתת סיכון כופרה ב-90% תוך 30 יום</span>
-      </div>
-      <div class="proof-chip">
-        <svg class="chip-icon" data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 10.5L8.5 13L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"></circle>
-        </svg>
-        <span>זמינות 24/7 לאירועי חירום</span>
-      </div>
-    </div>
-
-    <!-- CTA buttons -->
-    <div class="hero-cta-group">
-      <a href="#contact" class="btn-primary-hero" style="color: rgb(23, 26, 58) !important;" data-element-type="button" data-element-id="btn-1783344720172-aoo8xks1k" data-native-element="true">
-        קבע שיחת אבחון חינם (שווי ₪1,500)
-        <svg class="btn-arrow" data-element-type="icon" data-icon-type="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7 5L13 10L7 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-      </a>
-      <a href="#risks" class="btn-secondary-hero" data-element-type="button" data-element-id="btn-1783344720172-wf4ujqcu8" data-native-element="true">
-        גלה את 3 הסכנות
-      </a>
-    </div>
-
-    <!-- Guarantee micro-line -->
-    <p class="hero-guarantee">
-      <svg class="guarantee-icon" data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M9 1.5L11.3175 6.138L16.5 6.9105L12.75 10.5405L13.635 15.69L9 13.284L4.365 15.69L5.25 10.5405L1.5 6.9105L6.6825 6.138L9 1.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
-      </svg>
-      <strong>הבטחת מגן עסק:</strong> אם לא תקבל 3 תובנות ישימות בשיחה — נתרום ₪500 לעמותה שתבחר.
-    </p>
-
+    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="hero">
+  <!-- Background Image -->
+  <div class="hero-bg-wrapper">
+    <div class="hero-bg-image" style="background-image: url('assets/site-index-hero-image-1.webp');  background-size: cover; background-position: center;"></div>
   </div>
 
-  <!-- Bottom divider: diagonal ultraviolet-to-lavender gradient mist with cyber-mint route line -->
-  <div class="hero-divider-wrapper" aria-hidden="true">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="hero-divider-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.6"></stop>
-          <stop offset="100%" stop-color="#C4B5FD" stop-opacity="0.2"></stop>
-        </linearGradient>
-      </defs>
-      <!-- Diagonal mist shape filling the bottom area -->
-      <path d="M0,100 L0,65 L1200,20 L1200,100 Z" fill="#F0F0F8"></path>
-      <!-- Thin glowing cyber-mint route line -->
-      <path d="M0,82 L400,60 L800,45 L1200,28" stroke="#31E6B4" stroke-width="2" fill="#F0F0F8" opacity="0.8"></path>
+  <!-- Scrim Overlay -->
+  <div class="hero-scrim"></div>
+
+  <!-- Decorative Cyber Motifs -->
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+  <div class="purple-radial-glow" aria-hidden="true"></div>
+  <svg class="warning-triangle-accent" aria-hidden="true" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M40 8L72 64H8L40 8Z" stroke="#F97316" stroke-width="2" stroke-linejoin="round"></path>
+    <path d="M40 28V44" stroke="#F97316" stroke-width="3" stroke-linecap="round"></path>
+    <circle cx="40" cy="54" r="2.5" fill="#F97316"></circle>
+  </svg>
+
+  <!-- Content Overlay -->
+  <div class="hero-overlay-group">
+    <div class="hero-container">
+      <div class="hero-content">
+        <!-- Urgency Badge -->
+        <div class="urgency-badge">
+          <span class="badge-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"></circle>
+              <path d="M8 4V8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+              <circle cx="8" cy="11.5" r="1" fill="currentColor"></circle>
+            </svg>
+          </span>
+          <span>נותרו 4 מקומות לשיחות אבחון החודש</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-headline">תפסיק לישון עם דאגות.<br>קבל הגנת אנטרפרייז במחיר של עסק קטן.</h1>
+
+        <!-- Subtitle -->
+        <h3 class="hero-subtitle">דמיטרי מורדוב מביא 20+ שנות ניסיון מניהול תשתיות קריטיות בארגונים פיננסיים, תעשייה ומדיה — ועכשיו הוא מנגיש את הסטנדרטים האלה לעסק שלך.</h3>
+
+        <!-- Guarantee Block -->
+        <div class="guarantee-block">
+          <div class="guarantee-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 2L12.5 7.5L18.5 8L13.5 12.5L15 18.5L10 15.5L5 18.5L6.5 12.5L1.5 8L7.5 7.5L10 2Z" fill="currentColor"></path>
+            </svg>
+          </div>
+          <p class="guarantee-text">הבטחת מגן עסק: אם לא תקבל 3 תובנות ישימות בשיחה — נתרום ₪500 לעמותה שתבחר.</p>
+        </div>
+
+        <!-- CTAs -->
+        <div class="hero-ctas">
+          <a href="#contact" class="btn-primary">קבע שיחת אבחון חינם (שווי ₪1,500)</a>
+          <a href="#risks" class="btn-secondary">
+            <span>גלה את 3 הסכנות</span>
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Trust Metrics -->
+        <div class="trust-metrics">
+          <div class="metric-item">
+            <div class="metric-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"></path>
+                <path d="M6 10L9 13L14 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <span>סקר חוסן ראשוני תוך 10 ימים</span>
+          </div>
+          <div class="metric-item">
+            <div class="metric-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"></path>
+                <path d="M6 10L9 13L14 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <span>הפחתת סיכון כופרה ב-90% תוך 30 יום</span>
+          </div>
+          <div class="metric-item">
+            <div class="metric-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"></path>
+                <path d="M6 10L9 13L14 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <span>זמינות 24/7 לאירועי חירום</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Divider for seamless transition -->
+  <div class="index-hero-divider-wrapper" aria-hidden="true">
+    <svg data-no-icon-edit="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,80 L0,30 Q60,25 120,32 T240,28 Q300,32 360,25 T480,30 Q540,28 600,32 T720,25 Q780,30 840,28 T960,32 Q1020,25 1080,30 T1200,28 L1200,80 Z" fill="#F0F0F8"></path>
     </svg>
   </div>
-
-  <!-- Decorative motifs (behind content, pointer-events none) -->
-  <div class="hero-decorations" aria-hidden="true">
-    <!-- Purple radial glow -->
-    <div class="deco-radial-glow"></div>
-    <!-- Cyber grid overlay -->
-    <div class="deco-cyber-grid"></div>
-    <!-- Warning triangle accent -->
-    <svg class="deco-warning-triangle" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M40 8L72 64H8L40 8Z" stroke="#F97316" stroke-width="2" fill="none" opacity="0.6"></path>
-      <path d="M40 36V48" stroke="#F97316" stroke-width="2.5" stroke-linecap="round" opacity="0.6"></path>
-      <circle cx="40" cy="56" r="2" fill="#F97316" opacity="0.6"></circle>
-    </svg>
-  </div>
-
 </section>
 
 <section data-band-index="1" id="services" class="index-services-section" data-layout-spec="בית-services">
@@ -1236,11 +1604,11 @@
   <div class="profile-container">
     <!-- Narrative Content Column (START = Right in RTL) -->
     <div class="profile-text-col">
-      <h2 class="profile-heading" style="">
-        </h2><h1 style=""></h1><h2><span class="profile-heading-accent">דמיטרי מורדוב </span><span style="color: #171a3a !important"><span class="profile-heading-accent">—</span> <span style="color: #ffffff !important">ה<span style="font-weight: normal;">מומחה שמאחורי החוסן</span></span><span style="font-weight: normal;"></span></span>
+      <h2 class="profile-heading" >
+        </h2><h1 ></h1><h2><span class="profile-heading-accent">דמיטרי מורדוב </span><span style="color: #171a3a !important"><span class="profile-heading-accent">—</span> <span style="color: #ffffff !important">ה<span style="font-weight: normal;">מומחה שמאחורי החוסן</span></span><span style="font-weight: normal;"></span></span>
       </h2>
       
-      <p class="profile-narrative" style="">
+      <p class="profile-narrative" >
         במשך יותר מ-20 שנה הייתי האיש שמאחורי הקלעים בארגונים הגדולים במשק — גופים פיננסיים, תעשייה כבדה, תקשורת ומדיה. כשמערכות קרסו במקומות אחרים, שלי המשיכו לעבוד. כשכופרות שיתקו מתחרים, אירועים נוטרלו בשקט. את השקט התעשייתי הזה, שיצרתי בסביבות אנטרפרייז, אני מביא היום לעסקים קטנים ובינוניים.
       </p>
 
@@ -1694,148 +2062,6 @@
       var hasDH=false;
       if(heroEl){var hCs=getComputedStyle(heroEl);var hBI=hCs.backgroundImage;if(hBI&&hBI!=='none'){if(hBI.indexOf('url(')!==-1){var hM2=hCs.backgroundColor.match(/\d+/g);if(hM2&&hM2.length>=3){hasDH=sLum(parseInt(hM2[0]),parseInt(hM2[1]),parseInt(hM2[2]))<0.4;}else{hasDH=true;}}else if(hBI.indexOf('gradient')!==-1){var cM=hBI.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/g);if(cM&&cM.length>0){var tLm=0;for(var ci=0;ci<cM.length;ci++){var pts=cM[ci].match(/\d+/g);tLm+=sLum(parseInt(pts[0]),parseInt(pts[1]),parseInt(pts[2]));}hasDH=(tLm/cM.length)<0.4;}else{hasDH=true;}}else{hasDH=true;}}else{var hM=hCs.backgroundColor.match(/\d+/g);if(hM&&hM.length>=3){hasDH=sLum(parseInt(hM[0]),parseInt(hM[1]),parseInt(hM[2]))<0.4;}}}
       if(!hasDH){window.removeEventListener('scroll',onS);window.removeEventListener('resize',onS);applyScrolled();window._zappyNavNoDarkHero=true;}
-    })();
-    </script>
-
-    <script>
-    (function(){
-      var _applied=false;
-      function _isHeroBg(w){var img=w.querySelector('img');if(img&&(img.getAttribute('data-hero-bg')==='true'||img.getAttribute('data-hero-background')==='true'))return true;var p=(w.style.position||'').replace(/\s*!important\s*/g,'').trim();var ww=(w.style.width||'').replace(/\s*!important\s*/g,'').trim();var hh=(w.style.height||'').replace(/\s*!important\s*/g,'').trim();return p==='absolute'&&ww==='100%'&&hh==='100%';}
-      function fixDesktopWrappers(){
-        // No-op: desktop wrapper restoration is handled by ZAPPY_PUBLISHED_ZOOM_WRAPPER_RUNTIME
-        // in script.js (restoreWrapperDimensions). The old inflation logic here was expanding
-        // small wrappers (e.g. 139px logo wrappers) to their parent width, conflicting with
-        // the correct stored dimensions.
-      }
-      function _parsePos(s){var x=50,y=50;try{var m=(s||'').match(/(-?d+(?:.d+)?)%s+(-?d+(?:.d+)?)%/);if(m){x=parseFloat(m[1]);y=parseFloat(m[2]);}}catch(e){}if(!isFinite(x))x=50;if(!isFinite(y))y=50;return{x:Math.max(0,Math.min(100,x)),y:Math.max(0,Math.min(100,y))};}
-      function _coverPct(iA,cA){if(!isFinite(iA)||iA<=0||!isFinite(cA)||cA<=0)return{w:100,h:100};if(iA>=cA)return{w:(iA/cA)*100,h:100};return{w:100,h:(cA/iA)*100};}
-      function applyMobile(){
-        if(_applied)return;_applied=true;
-        document.querySelectorAll('[data-zappy-zoom-wrapper="true"]').forEach(function(w){
-          if(_isHeroBg(w))return;
-          var cw=w.style.getPropertyValue('width');
-          var _sW=parseFloat(w.getAttribute('data-zappy-zoom-wrapper-width'))||0;
-          var _sH=parseFloat(w.getAttribute('data-zappy-zoom-wrapper-height'))||0;
-          if(!cw&&!(_sW>0&&_sH>0))return;
-          if(!w._zappyDesktop)w._zappyDesktop={wStyle:w.getAttribute('style')};
-          var img=w.querySelector('img');
-          if(!img)return;
-          if(!img._zappyDesktop)img._zappyDesktop={src:img.getAttribute('src'),style:img.getAttribute('style')};
-          var mobileZoomStr=img.getAttribute('data-zappy-mobile-zoom');
-          var mobileZoom=parseFloat(mobileZoomStr);
-          var mobileSrc=img.getAttribute('data-zappy-mobile-src');
-          var mobilePos=img.getAttribute('data-zappy-mobile-object-position');
-          var parentOvf=w.parentElement?((w.parentElement.style.overflow||'')+(window.getComputedStyle(w.parentElement).overflow||'')).trim():'';
-          var inConstrainedParent=parentOvf.indexOf('hidden')!==-1||parentOvf.indexOf('clip')!==-1;
-          if(inConstrainedParent){
-            w.style.setProperty('max-width','100%','important');
-          }else{
-            w.style.setProperty('width','100%','important');
-            w.style.setProperty('max-width','100%','important');
-          }
-          if(mobileSrc)img.src=mobileSrc;
-          function _applyZoomCrop(_img,_w,_ePos,_eZoom){
-            var rect=_w.getBoundingClientRect();
-            if(!rect||!rect.width||!rect.height)return;
-            var nW=_img.naturalWidth||0,nH=_img.naturalHeight||0;
-            if(!(nW>0&&nH>0))return;
-            var iA=nW/nH,cA=rect.width/rect.height;
-            var cv=_coverPct(iA,cA);
-            var wP=100,hP=100;
-            if(_eZoom>=1){wP=cv.w*_eZoom;hP=cv.h*_eZoom;}
-            else{var t2=(_eZoom-0.5)/0.5;if(!isFinite(t2))t2=0;t2=Math.max(0,Math.min(1,t2));wP=100+t2*(cv.w-100);hP=100+t2*(cv.h-100);}
-            var p2=_parsePos(_ePos);
-            var lP=(100-wP)*(p2.x/100);
-            var tP=(100-hP)*(p2.y/100);
-            _img.style.setProperty('position','absolute','important');
-            _img.style.setProperty('left',lP+'%','important');
-            _img.style.setProperty('top',tP+'%','important');
-            _img.style.setProperty('width',wP+'%','important');
-            _img.style.setProperty('height',hP+'%','important');
-            _img.style.setProperty('max-width','none','important');
-            _img.style.setProperty('max-height','none','important');
-            _img.style.setProperty('display','block','important');
-            _img.style.setProperty('object-fit',_eZoom<1?'fill':'cover','important');
-            _img.style.setProperty('transform','none','important');
-            _img.style.setProperty('margin','0','important');
-          }
-          if(_sW>0&&_sH>0){
-            var effZoom=(isFinite(mobileZoom)&&mobileZoom>0)?mobileZoom:(parseFloat(img.getAttribute('data-zappy-zoom'))||1);
-            var effPos=mobilePos||img.getAttribute('data-zappy-object-position')||img.style.objectPosition||'50% 50%';
-            w.style.setProperty('overflow','hidden','important');
-            w.style.setProperty('position','relative','important');
-            w.style.setProperty('width','100%','important');
-            w.style.setProperty('max-width','100%','important');
-            if(_sW>0&&_sH>0){w.style.setProperty('padding-bottom','0','important');w.style.setProperty('aspect-ratio',_sW+'/'+_sH,'important');w.style.setProperty('height','auto','important');}
-            _applyZoomCrop(img,w,effPos,effZoom);
-            if(!(img.complete&&img.naturalWidth>0)){
-              (function(_i,_w2,_p,_z){_i.addEventListener('load',function _ol(){_i.removeEventListener('load',_ol);try{_applyZoomCrop(_i,_w2,_p,_z);}catch(e){}});
-              })(img,w,effPos,effZoom);
-            }
-          }else{
-            if(!inConstrainedParent)w.style.setProperty('height','auto','important');
-            img.style.setProperty('position','relative','important');
-            img.style.setProperty('width','100%','important');
-            img.style.setProperty('height','auto','important');
-            img.style.setProperty('max-width','100%','important');
-            img.style.setProperty('max-height',inConstrainedParent?'none':'400px','important');
-            img.style.setProperty('object-fit','cover','important');
-            img.style.setProperty('left','0','important');
-            img.style.setProperty('top','0','important');
-            img.style.setProperty('transform','none','important');
-          }
-        });
-        document.querySelectorAll('img[data-zappy-mobile-src],img[data-zappy-mobile-object-position],img[data-zappy-mobile-zoom]').forEach(function(img){
-          var zw=img.closest('[data-zappy-zoom-wrapper="true"]');
-          if(zw&&!_isHeroBg(zw))return;
-          if(!img._zappyDesktop)img._zappyDesktop={src:img.getAttribute('src'),style:img.getAttribute('style')};
-          var mobileSrc=img.getAttribute('data-zappy-mobile-src');
-          var mobilePos=img.getAttribute('data-zappy-mobile-object-position');
-          var mobileZoom=parseFloat(img.getAttribute('data-zappy-mobile-zoom'));
-          if(mobileSrc)img.src=mobileSrc;
-          if(mobilePos)img.style.setProperty('object-position',mobilePos,'important');
-          if(mobileZoom>1){
-            img.style.setProperty('transform','scale('+mobileZoom+')','important');
-            img.style.setProperty('transform-origin',mobilePos||'50% 50%','important');
-            var p=img.parentElement;
-            if(p)p.style.setProperty('overflow','hidden','important');
-          }
-        });
-      }
-      function revertDesktop(){
-        if(!_applied)return;_applied=false;
-        document.querySelectorAll('[data-zappy-zoom-wrapper="true"]').forEach(function(w){
-          if(w._zappyDesktop&&w._zappyDesktop.wStyle!=null){w.setAttribute('style',w._zappyDesktop.wStyle);}
-          var img=w.querySelector('img');
-          if(img&&img._zappyDesktop){
-            if(img._zappyDesktop.src!=null)img.setAttribute('src',img._zappyDesktop.src);
-            if(img._zappyDesktop.style!=null)img.setAttribute('style',img._zappyDesktop.style);
-            else img.removeAttribute('style');
-          }
-        });
-        document.querySelectorAll('img[data-zappy-mobile-src],img[data-zappy-mobile-object-position],img[data-zappy-mobile-zoom]').forEach(function(img){
-          var zw=img.closest('[data-zappy-zoom-wrapper="true"]');
-          if(zw&&!_isHeroBg(zw))return;
-          if(img._zappyDesktop){
-            if(img._zappyDesktop.src!=null)img.setAttribute('src',img._zappyDesktop.src);
-            if(img._zappyDesktop.style!=null)img.setAttribute('style',img._zappyDesktop.style);
-            else img.removeAttribute('style');
-          }
-        });
-        _fixHeroBgWrappers();
-        fixDesktopWrappers();
-      }
-      function _fixHeroBgWrappers(){var isMob=window.innerWidth<=768;document.querySelectorAll('[data-zappy-zoom-wrapper="true"]').forEach(function(w){if(!_isHeroBg(w))return;w.style.setProperty('position','absolute','important');w.style.setProperty('top','0','important');w.style.setProperty('left','0','important');w.style.setProperty('width','100%','important');w.style.setProperty('height','100%','important');w.style.setProperty('max-width','none','important');w.style.setProperty('overflow','hidden','important');w.setAttribute('data-zappy-zoom-wrapper-width-mode','full');var img=w.querySelector('img');if(img){img.style.setProperty('width','100%','important');img.style.setProperty('height','100%','important');img.style.setProperty('object-fit','cover','important');img.style.setProperty('position','relative','important');img.style.setProperty('top','0','important');img.style.setProperty('left','0','important');img.style.setProperty('max-width','none','important');img.style.setProperty('max-height','none','important');img.style.setProperty('display','block','important');if(isMob){var mSrc=img.getAttribute('data-zappy-mobile-src');var mPos=img.getAttribute('data-zappy-mobile-object-position');var mZoom=parseFloat(img.getAttribute('data-zappy-mobile-zoom'));if(mSrc){if(!img._zappyDesktop)img._zappyDesktop={src:img.getAttribute('src'),style:img.getAttribute('style')};img.src=mSrc;}if(mPos)img.style.setProperty('object-position',mPos,'important');if(mZoom>1){img.style.setProperty('transform','scale('+mZoom+')','important');img.style.setProperty('transform-origin',mPos||'50% 50%','important');}}}});}
-      function init(){
-        _fixHeroBgWrappers();
-        var mq=window.matchMedia('(max-width:768px)');
-        function onChange(e){if(e.matches)applyMobile();else revertDesktop();}
-        if(mq.matches)applyMobile();
-        else fixDesktopWrappers();
-        try{mq.addEventListener('change',onChange);}catch(e){mq.addListener(onChange);}
-      }
-      if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
-      else setTimeout(init,50);
     })();
     </script>
 </body>

@@ -1409,6 +1409,35 @@ window.onload = function() {
 })();
 
 
+/* Added Component Script */
+/* Optional: Intersection Observer for entrance animations */
+document.addEventListener('DOMContentLoaded', () => {
+  const floatingCards = document.querySelectorAll('.magen-hero__floating-card');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.3 });
+  
+  floatingCards.forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(card);
+    
+    // Trigger after a short delay
+    setTimeout(() => {
+      card.style.opacity = '1';
+      card.style.transform = 'translateY(0)';
+    }, 300);
+  });
+});
+
+
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
   try {

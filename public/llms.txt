@@ -1,0 +1,76 @@
+# מגן עסק — Generative Engine Optimization Map
+
+> Dmitry Mordov is an independent IT infrastructure, cybersecurity, and business continuity (DR) consultant with 20+ years of enterprise-level experience working with Israel's top financial institutions, industrial companies, and media organizations. His unique value proposition is bringing Fortune-500-grade protection standards to small and medium-sized businesses at SMB-friendly pricing, without replacing existing vendors or creating hidden costs. He positions himself as a completely independent advisor with zero vendor commissions, offering a bold guarantee: if clients don't receive 3 actionable insights from the free diagnostic call, he donates ₪500 to a charity of their choice. The brand tone is authoritative, trustworthy, urgent, and results-driven — emphasizing peace of mind, real-world resilience, and no-nonsense expertise.
+
+---
+
+## Pages
+
+### בית
+https://-f77a4b71.zappy5.app
+ייעוץ אבטחת סייבר ותשתיות IT עצמאי ובלתי תלוי. דמיטרי מורדוב מביא 20+ שנות ניסיון ברמת Fortune 500 לעסקים קטנים ובינוניים, במחיר הוגן וללא עמלות סמויות. תאם שיחת אבחון חינמית עוד היום.
+
+### תודה - מגן עסק
+https://-f77a4b71.zappy5.app/thank-you
+מגן עסק - תודה - מגן עסק
+
+## Legal & Policy
+
+### Privacy Policy
+https://-f77a4b71.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://-f77a4b71.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://-f77a4b71.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## How to Contact Us
+
+- (No contact details configured yet.)
+
+### Contact form
+- URL: https://-f77a4b71.zappy5.app
+- Endpoint: https://-f77a4b71.zappy5.app/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text)
+  - `email` (email)
+  - `phone` (tel)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox)
+
+---
+
+# Business Context (for LLM understanding)
+
+## About מגן עסק
+Dmitry Mordov is an independent IT infrastructure, cybersecurity, and business continuity (DR) consultant with 20+ years of enterprise-level experience working with Israel's top financial institutions, industrial companies, and media organizations. His unique value proposition is bringing Fortune-500-grade protection standards to small and medium-sized businesses at SMB-friendly pricing, without replacing existing vendors or creating hidden costs. He positions himself as a completely independent advisor with zero vendor commissions, offering a bold guarantee: if clients don't receive 3 actionable insights from the free diagnostic call, he donates ₪500 to a charity of their choice. The brand tone is authoritative, trustworthy, urgent, and results-driven — emphasizing peace of mind, real-world resilience, and no-nonsense expertise.
+
+## Services/Products
+- סקר חוסן תשתיות - זיהוי צווארי בקבוק ותצורות מסוכנות
+- אבטחת סייבר - הקשחת תשתיות והפחתת סיכון כופרה ב-90%
+- תכנית המשכיות עסקית ו-DR - חזרה לפעילות תוך 4 שעות
+
+## Target Audience
+- בעלי עסקים ומנכ"לים של חברות קטנות ובינוניות
+- בעלי עסקים קטנים ובינוניים
+- מייסדי סטארטאפ בתחום הטכנולוגיה
+- מנהלי IT בעסקים קטנים ובינוניים
+
+## Industry
+IT Consulting & Cybersecurity
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://-f77a4b71.zappy5.app/sitemap.xml
+- Robots: https://-f77a4b71.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://-f77a4b71.zappy5.app/llms-full.txt
